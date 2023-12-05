@@ -1,12 +1,10 @@
 #include<stdlib.h>
-#include <stdio.h>
-     
+#include <stdio.h>     
 void display();
 void insert_begin();
 void insert_end();
 void insert_pos();
 
- 
 struct node
 {
         int info;
@@ -16,21 +14,18 @@ struct node *start=NULL;
 int main()     
 {
         int choice;
-        while(1){
-               
+        while(1){               
                 printf("Linkedlist Insertion");
                 printf("\n 1.Display");
                 printf("\n 2.Insert at the beginning");
                 printf("\n 3.Insert at the end");
-                printf("\n 4.Insert at specified position");
-                
+                printf("\n 4.Insert at specified position");               
                 printf("\n 5.Exit");
                 printf("\n------------------------------------");
                 printf("\nEnter your choice:");
                 scanf("%d",&choice);
                 switch(choice)
-                {
-                       
+                {                     
                         case 1:
                                         display();
                                         break;
